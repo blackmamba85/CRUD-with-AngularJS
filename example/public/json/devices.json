@@ -1,0 +1,30 @@
+[
+	{
+		"id": 17,
+		"type": "Apple iPhone",
+		"model": "iPhone 6 Plus",
+		"description": "New",
+		"comments": "Great Device!"		
+	},
+	{
+		"id": 25,
+		"type": "Apple iPhone",
+		"model": "iPhone 5s",
+		"description": "Used",
+		"comments": "A little bit slow"		
+	},
+	{
+		"id": 36,
+		"type": "Samsung Galaxies",
+		"model": "Galaxy S6",
+		"description": "New",
+		"comments": "Great Screen!"	
+	},
+	{
+		"id": 49,
+		"type": "Kindle Fire",
+		"model": "Kindle Fire HD 16GB",
+		"description": "Like New",
+		"comments": "no comments"
+	}
+]

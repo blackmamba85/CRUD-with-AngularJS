@@ -1,0 +1,24 @@
+<md-dialog>
+    <md-dialog-content>
+        <md-input-container md-no-float>
+            <input ng-model="device.type" type="text" placeholder="Device Type" ng-required="true">
+        </md-input-container>
+        <md-input-container md-no-float>
+            <input ng-model="device.model" type="text" placeholder="Model" ng-required="true">
+        </md-input-container>
+        <md-input-container md-no-float>
+            <input ng-model="device.description" type="text" placeholder="Description (optional)">
+        </md-input-container>
+         <md-input-container md-no-float>
+            <input ng-model="device.comments" type="text" placeholder="Comments (optional)">
+        </md-input-container>
+    </md-dialog-content>
+    <div class="md-actions">
+        <md-button ng-click="cancel()" class="md-primary">
+            Cancel
+        </md-button>
+        <md-button ng-click="save(device)" class="md-primary">
+            Save
+        </md-button>
+    </div>
+</md-dialog>

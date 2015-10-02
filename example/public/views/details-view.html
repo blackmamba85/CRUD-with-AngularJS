@@ -1,0 +1,17 @@
+<md-dialog>
+    <md-dialog-content>
+        <h3>{{ device.type }}</h3>
+        <h4>{{ device.model }}</h4>
+        <p>{{ device.description }}</p>
+          <md-input-container md-no-float>
+          <i class="fa fa-commenting"></i>
+            <input ng-model="device.comments" type="text" readonly="true">
+        </md-input-container>
+        
+    </md-dialog-content>
+    <div class="md-actions">
+        <md-button ng-click="back()" class="md-primary">
+            Back to List
+        </md-button>
+    </div>
+</md-dialog>

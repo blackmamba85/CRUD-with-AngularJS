@@ -1,0 +1,38 @@
+<div ng-controller="MainController" layout="column" flex layout-fill ng-cloak>
+    <div ng-init="init()">
+        <md-content style="height: 600px;">
+            <section>
+                <md-subheader class="md-primary">My Devices</md-subheader>
+                <md-button class="md-fab" ng-click="addNew($event)">
+                    <i class="fa fa-plus"></i>
+                    <md-tooltip>Add new device</md-tooltip>
+                </md-button>
+                <br><br>
+                
+                <md-list-item class="md-3-line" ng-repeat="device in devices">
+                    <img src='assets/img/devicesicon.png' class="md-avatar" alt="{{device.type}}" />
+                    <div class="md-list-item-text" layout="column">
+                        <h3>{{ device.type }}</h3>
+                        <h4>{{ device.model }}</h4>
+                        <p>{{ device.description }}</p>                       
+                    </div>
+                    <div>
+                        <md-button class="md-icon-button md-primary" ng-click="deviceEdit($event, device)">
+                            <i class="fa fa-pencil-square-o"></i>
+                             <md-tooltip>Edit</md-tooltip>
+                        </md-button>                        
+                         <md-button class="md-icon-button md-primary" ng-click="deviceDetails($event, device)">
+                            <i class="fa fa-sticky-note-o"></i>
+                             <md-tooltip>Details</md-tooltip>
+                        </md-button>
+                        <md-button class="md-icon-button md-primary" ng-click="deleteDevice($event, device)">
+                            <i class="fa fa-minus-circle"></i>
+                             <md-tooltip>Delete</md-tooltip>
+                        </md-button>
+                    </div>
+
+                </md-list-item>
+            </section>
+        </md-content>
+    </div>
+</div>
